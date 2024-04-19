@@ -1,5 +1,9 @@
+import './Logo.css'
+
 export default function Logo(){
     return (
-      <h1>🎒 Pack Back Buddy 🌴</h1>
+      <div className='container'>
+        <h1>🎒 Pack Back Buddy 🌴</h1>
+      </div>
     )
   }

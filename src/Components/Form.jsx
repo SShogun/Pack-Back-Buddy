@@ -1,11 +1,10 @@
 import { useState } from "react";
-
+import './Form.css'
 
 export default function Form({onAddItems}) {
     const [description, setDescription] = useState("")
     const [quantity, setQuantity] = useState(1)
   
-    
   
     function handleSubmit(e) {
       e.preventDefault();
@@ -29,6 +28,7 @@ export default function Form({onAddItems}) {
     return (
       <form className="add-form" onSubmit={handleSubmit}>
         <h3>What do you need on your trip?</h3>
+        <section id="section">
         <select id="" value={quantity} onChange={(e)=>setQuantity(Number(e.target.value))}>
           {Array.from({length: 20}, (_, i) => i+1).map(num=><option value={num} key={num}>{num}</option>)}
         </select>
@@ -38,6 +38,7 @@ export default function Form({onAddItems}) {
         value={description} 
         onChange={(e)=>{setDescription(e.target.value)}}/>
         <button>Add</button>
+        </section>
       </form >
     )
   }

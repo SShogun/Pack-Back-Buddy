@@ -1,0 +1,10 @@
+.list {
+    height: 45vh;
+    width: 100%;
+}
+ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 10px;
+    text-decoration: none;
+}
