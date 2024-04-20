@@ -1,4 +1,3 @@
-import './Item.css'
 
 export default function Item({ item, onDeleteItems, onToggleItems }) {
     return (

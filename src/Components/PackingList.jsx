@@ -1,6 +1,5 @@
 import Item from "./Item";
 import { useState } from "react";
-import './PackingList.css'
 
 
 export default function PackingList({ items, onDeleteItems, onToggleItems, onClearItems }){
